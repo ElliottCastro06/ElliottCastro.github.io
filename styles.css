@@ -96,8 +96,8 @@ p {
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #007bff;
@@ -129,7 +129,8 @@ p {
 .servicio img {
   width: 100%;
   height: auto;
-  max-width: 200px; /* Controla el tamaño máximo de la imagen */
+  max-width: 150px; /* Limitar el tamaño de la imagen */
+  max-height: 150px; /* Limitar la altura máxima */
   margin-bottom: 10px;
   border-radius: 5px;
 }
@@ -186,7 +187,7 @@ p {
   .servicio {
     width: 90%; /* Cada cuadro ocupará el 90% del ancho */
     margin-bottom: 20px;
-    max-width: 400px; /* Limitar el tamaño máximo en móvil */
+    max-width: 350px; /* Limitar el tamaño máximo en móvil */
   }
 
   /* Acerca de Mí: reducir el tamaño de la foto */
@@ -211,6 +212,6 @@ p {
 
   .servicio {
     width: 30%; /* Cada cuadro ocupa el 30% del ancho */
-    max-width: 350px; /* Limitar el tamaño máximo en escritorio */
+    max-width: 300px; /* Limitar el tamaño máximo en escritorio */
   }
 }
