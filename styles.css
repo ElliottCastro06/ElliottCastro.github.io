@@ -127,10 +127,9 @@ p {
 }
 
 .servicio img {
-  width: 100%;
+  width: 70%; /* Ajusta el tamaño de las imágenes */
   height: auto;
-  max-width: 150px; /* Limitar el tamaño de la imagen */
-  max-height: 150px; /* Limitar la altura máxima */
+  max-width: 120px; /* Limita el tamaño máximo de la imagen */
   margin-bottom: 10px;
   border-radius: 5px;
 }
@@ -190,10 +189,9 @@ p {
     max-width: 350px; /* Limitar el tamaño máximo en móvil */
   }
 
-  /* Acerca de Mí: reducir el tamaño de la foto */
-  .profile-pic {
-    width: 120px;
-    height: 120px;
+  .servicio img {
+    width: 60%; /* Reducir tamaño de la imagen en móviles */
+    max-width: 100px; /* Limitar el tamaño máximo de la imagen */
   }
 }
 
@@ -213,5 +211,10 @@ p {
   .servicio {
     width: 30%; /* Cada cuadro ocupa el 30% del ancho */
     max-width: 300px; /* Limitar el tamaño máximo en escritorio */
+  }
+
+  .servicio img {
+    width: 70%; /* Ajustar el tamaño de la imagen en escritorio */
+    max-width: 120px; /* Limitar el tamaño máximo de la imagen */
   }
 }
