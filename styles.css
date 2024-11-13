@@ -113,13 +113,13 @@ p {
 
 .servicio {
   background: #f5f5f5;
-  width: 30%;
   padding: 15px;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s;
   margin-bottom: 20px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 
 .servicio:hover {
@@ -129,7 +129,18 @@ p {
 .servicio img {
   width: 100%;
   height: auto;
+  max-width: 200px; /* Controla el tamaño máximo de la imagen */
+  margin-bottom: 10px;
   border-radius: 5px;
+}
+
+.servicio h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.servicio p {
+  font-size: 1em;
 }
 
 /* Contacto */
@@ -175,6 +186,7 @@ p {
   .servicio {
     width: 90%; /* Cada cuadro ocupará el 90% del ancho */
     margin-bottom: 20px;
+    max-width: 400px; /* Limitar el tamaño máximo en móvil */
   }
 
   /* Acerca de Mí: reducir el tamaño de la foto */
@@ -199,5 +211,6 @@ p {
 
   .servicio {
     width: 30%; /* Cada cuadro ocupa el 30% del ancho */
+    max-width: 350px; /* Limitar el tamaño máximo en escritorio */
   }
 }
