@@ -108,6 +108,7 @@ p {
   display: flex;
   justify-content: space-around;
   gap: 10px;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
 }
 
 .servicio {
@@ -128,6 +129,19 @@ p {
   width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+/* Para pantallas pequeñas, hacer que los cuadros se apilen verticalmente */
+@media (max-width: 768px) {
+  .servicios-contenedor {
+    flex-direction: column; /* Los elementos se apilan verticalmente */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .servicio {
+    width: 80%; /* Los cuadros ocuparán un 80% del ancho en móviles */
+    margin-bottom: 20px; /* Añade un poco de espacio entre los cuadros */
+  }
 }
 
 /* Contacto */
