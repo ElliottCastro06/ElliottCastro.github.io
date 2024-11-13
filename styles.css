@@ -106,8 +106,9 @@ p {
 /* Servicios */
 .servicios-contenedor {
   display: flex;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden cuando no caben */
 }
 
 .servicio {
@@ -118,6 +119,7 @@ p {
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s;
+  margin-bottom: 20px;
 }
 
 .servicio:hover {
@@ -171,7 +173,7 @@ p {
   }
 
   .servicio {
-    width: 90%; /* Aseguramos que cada servicio ocupe el 90% del ancho */
+    width: 90%; /* Cada cuadro ocupará el 90% del ancho */
     margin-bottom: 20px;
   }
 
@@ -192,9 +194,10 @@ p {
   .servicios-contenedor {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .servicio {
-    width: 30%;
+    width: 30%; /* Cada cuadro ocupa el 30% del ancho */
   }
 }
