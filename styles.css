@@ -176,20 +176,19 @@ p {
 /* Versión móvil (dispositivos con un ancho máximo de 768px) */
 @media (max-width: 768px) {
   .container {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
   }
 
   .banner {
-    padding: 30px 10px;
+    padding: 50px 20px;
   }
 
   .banner h1 {
-    font-size: 1.8em;
+    font-size: 2.5em;
   }
 
   .cta-button {
-    padding: 8px 15px;
+    padding: 10px 20px;
   }
 
   /* Servicios: disposición vertical para móviles */
@@ -199,22 +198,22 @@ p {
   }
 
   .servicio-vertical {
-    width: 80%; /* Cada cuadro ocupará el 80% del ancho */
+    width: 100%; /* Se ocupa el 100% del ancho disponible */
+    max-width: 250px; /* Limita el tamaño máximo */
     margin-bottom: 15px;
-    max-width: 250px; /* Limitar el tamaño máximo en móvil */
   }
 
   .servicio-vertical img {
-    width: 40%; /* Reducir tamaño de la imagen aún más en móviles */
-    max-width: 70px; /* Limitar el tamaño máximo de la imagen */
+    width: 50%; /* Ajustar tamaño de la imagen más pequeña */
+    max-width: 80px; /* Limitar el tamaño máximo de la imagen */
   }
 
   .servicio-vertical h3 {
-    font-size: 1.2em; /* Reducir tamaño del título */
+    font-size: 1.3em; /* Mantener el mismo tamaño en móvil */
   }
 
   .servicio-vertical p {
-    font-size: 0.85em; /* Reducir tamaño del texto */
+    font-size: 0.9em; /* Mantener el mismo tamaño de fuente en móvil */
   }
 }
 
