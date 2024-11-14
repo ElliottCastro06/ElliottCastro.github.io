@@ -142,20 +142,20 @@ p {
 }
 
 .servicio-vertical img {
-  width: 60%; /* Ajusta el tamaño de las imágenes */
+  width: 50%; /* Ajusta el tamaño de las imágenes más pequeñas */
   height: auto;
-  max-width: 100px; /* Limita el tamaño máximo de la imagen */
+  max-width: 80px; /* Limita el tamaño máximo de la imagen */
   margin-bottom: 10px;
   border-radius: 5px;
 }
 
 .servicio-vertical h3 {
-  font-size: 1.5em;
+  font-size: 1.3em; /* Tamaño de texto más pequeño */
   margin-bottom: 10px;
 }
 
 .servicio-vertical p {
-  font-size: 1em;
+  font-size: 0.9em; /* Fuente más pequeña */
 }
 
 /* Contacto */
@@ -199,14 +199,22 @@ p {
   }
 
   .servicio-vertical {
-    width: 90%; /* Cada cuadro ocupará el 90% del ancho */
-    margin-bottom: 20px;
-    max-width: 350px; /* Limitar el tamaño máximo en móvil */
+    width: 80%; /* Cada cuadro ocupará el 80% del ancho */
+    margin-bottom: 15px;
+    max-width: 250px; /* Limitar el tamaño máximo en móvil */
   }
 
   .servicio-vertical img {
-    width: 60%; /* Reducir tamaño de la imagen en móviles */
-    max-width: 100px; /* Limitar el tamaño máximo de la imagen */
+    width: 40%; /* Reducir tamaño de la imagen aún más en móviles */
+    max-width: 70px; /* Limitar el tamaño máximo de la imagen */
+  }
+
+  .servicio-vertical h3 {
+    font-size: 1.2em; /* Reducir tamaño del título */
+  }
+
+  .servicio-vertical p {
+    font-size: 0.85em; /* Reducir tamaño del texto */
   }
 }
 
